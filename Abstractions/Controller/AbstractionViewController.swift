@@ -52,7 +52,7 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
     
     //Swipe left
     
-    public func pageViewController(_pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {
         guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
             else
@@ -80,7 +80,7 @@ public class AbstractionViewController: UIPageViewController, UIPageViewControll
     
     //Swipe Right
     
-    public func pageViewController(_pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
         guard let viewControllerIndex = orderedAbstractionViews.index(of: viewController)
             else
